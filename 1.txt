@@ -1,3 +1,11 @@
 developer access token :
 
 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
+
+
+
+Learning Updates:(24/05/2025)
+
+Learn about git
+Installation and setup of git 
+Learn different git commands and apply them
