@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { useState,createContext,useCallback } from "react";
+import { useState, createContext, useCallback } from "react";
 import "./App.css";
 import Props from "./components/props";
 import Lifecycle_method from "./components/lifecycle_method";
@@ -17,7 +17,6 @@ import Axios from "./components/axios";
 
 class App extends React.Component {
   render() {
-   
     return (
       <BrowserRouter>
         <div>
@@ -49,32 +48,23 @@ class App extends React.Component {
             <li>
               <Link to="/axios">axios</Link>
             </li>
-
-
-           
           </ul>
-          </div>
-          <Routes>
-            <Route path="/" element={<Home />}></Route>
-            <Route path="/usestate" element={<Usestate />}></Route>
-            <Route path="/useeffect" element={<UseEffect/>}></Route>
-            <Route path="/useref" element={<Useref/>}></Route>
-            <Route path="/usememo" element={<Usememo/>}></Route>
-            <Route path="/usecallback" element={<Usecallback/>}></Route>
-            <Route path="/usecontext" element={<Context/>}></Route>
-            <Route path="/usereducer" element={<Usereducer/>}></Route>
-            <Route path="/fetchdata" element={<Fetchdata/>}></Route>
-            <Route path="/axios" element={<Axios/>}></Route>
-          </Routes>
-        </BrowserRouter>
-      
-      
-
-    
+        </div>
+        <Routes>
+          <Route path="/" element={<Home />}></Route>
+          <Route path="/usestate" element={<Usestate />}></Route>
+          <Route path="/useeffect" element={<UseEffect />}></Route>
+          <Route path="/useref" element={<Useref />}></Route>
+          <Route path="/usememo" element={<Usememo />}></Route>
+          <Route path="/usecallback" element={<Usecallback />}></Route>
+          <Route path="/usecontext" element={<Context />}></Route>
+          <Route path="/usereducer" element={<Usereducer />}></Route>
+          <Route path="/fetchdata" element={<Fetchdata />}></Route>
+          <Route path="/axios" element={<Axios />}></Route>
+        </Routes>
+      </BrowserRouter>
     );
   }
 }
-
-
 
 export default App;
